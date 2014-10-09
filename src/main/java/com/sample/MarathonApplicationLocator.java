@@ -15,7 +15,7 @@ public class MarathonApplicationLocator {
 
     public static String getHostAndPortForApplication(String application) {
         Optional<Integer> first = marathonClient.getApp(application).getApp().getPorts().stream().findFirst();
-        return "http://127.0.0.0:" + first.get() ;
+        return "http://172.17.42.1:" + first.get() ;
     }
 
 }

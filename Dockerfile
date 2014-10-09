@@ -9,4 +9,4 @@ RUN yes | apt-get install -y oracle-java8-installer
 
 # Start the permission service
 
-ADD target/bootdemo-1.0-SNAPSHOT.war /tmp/demo.war
+ADD target/bootdemo.jar /tmp/application.jar
